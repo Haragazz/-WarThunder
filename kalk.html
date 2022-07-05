@@ -1,0 +1,20 @@
+<!Doctype html>
+<html>
+<script>
+	function rg(val)
+	{
+	let x = document.getElementById("x").value
+	let y = document.getElementById("y").value
+	let rd = document.getElementById("tr").value*Math.PI/180
+	document.getElementById("rg").value = Math.sqrt(x*x+y*y-(2*x*y*Math.cos(rd).toFixed(15)))
+	}
+</script>
+<body>
+
+<p style="margin-left:20px; font-size:91px;" align="center">
+X <input style="height:70px; width:700px; font-size:60px;" class="input_1" type="number" min="1" max="9999" step="1" id="x" value="" onkeyup="GeneralTriangle_2()" size="4" onclick="GeneralTriangle_2()"><br><br>
+Y <input style="height:70px; width:700px; font-size:60px;" class="input_1" type="number" min="1" max="9999" step="1" id="y" value="" onkeyup="GeneralTriangle_2()" size="4" onclick="GeneralTriangle_2()"><br><br>
+tr <input style="height:70px; width:700px; font-size:60px;" class="input_1" type="number" min="1" max="9999" step="1" id="tr" value="" onkeyup="GeneralTriangle_2()" size="4" onclick="GeneralTriangle_2()"><br><br>
+rg <input style="height:105px; width:700px; font-size:60px;" class="button_4" type="button" id="rg" onkeyup="GeneralTriangle_2()" size="4" value="" onclick="rg()"></p>
+</body>
+</html>
